@@ -63,8 +63,8 @@ int fx(vector<int>& nums, int n) {
 int main()
 { 
     // Open input and output files
-    freopen("input2.txt", "r", stdin);
-    freopen("output2.txt", "w", stdout);
+    freopen("sample_input1.txt", "r", stdin);
+    freopen("sample_output1.txt", "w", stdout);
     
     vector<int>v;
     int x;
