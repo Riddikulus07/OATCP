@@ -38,15 +38,15 @@ int exp(int x, int n, int mod)
         fact[i] = fact[i - 1] * i;
     }
 }*/
- int fx(vector<vector<int>>& matrix) {
-    int n = matrix.size(); 
-    int m = matrix[0].size();
+ int fx(vector<vector<int>>& b) {
+    int n = b.size();
+    int m = b[0].size();
 
     vector<int> row(n);
 
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
-            row[i] |= matrix[i][j] << (m - j);
+            row[i] |= b[i][j] << (m - j);
         }
     }
 
